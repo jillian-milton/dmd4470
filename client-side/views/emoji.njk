@@ -1,0 +1,7 @@
+{% extends "parent.njk" %}
+
+{% block main %}
+    {% for  code, url in emojis %}
+            <img src="{{ url }}" alt="{{ code }}" title="{{ code }}">
+    {% endfor %}
+{% endblock %}
